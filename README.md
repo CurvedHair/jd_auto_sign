@@ -21,3 +21,22 @@ fork 仓库
 仓库的 Action 中开启 Action
 
 触发签到的方法是 star 一下仓库，或者 commit 一次 master
+
+## 与远端保持同步
+
+下载 `Git`
+
+命令行输入
+
+```bash
+git clone XXXXXXXXX/jd_auto_sign.git
+cd ./jd_auto_sign
+```
+
+`XXXXXXXXX` 是你的 jd_auto_sign 仓库地址
+
+```
+git remote add PYGC https://github.com/PYGC/jd_auto_sign.git
+git pull --tags PYGC master
+git push origin master:master
+```
